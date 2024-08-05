@@ -20245,3 +20245,57 @@ html[dir="rtl"] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
   width: auto;
   height: 280px;
 }
+
+
+/* Client carousel*/
+
+.client-boxed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.client-boxed-aside {
+  margin-right: 20px;
+}
+
+.client-boxed-image {
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.client-boxed-main {
+  text-align: left;
+}
+
+.client-boxed-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.client-boxed-description {
+  font-size: 14px;
+  color: #666;
+}
+
+
+.carousel-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.carousel-controls button {
+  background: #0d5c7e; /* Example background color */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 500px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+
+
+.carousel-controls button:hover {
+  background: #0d5c7e; /* Example hover color */
+}
