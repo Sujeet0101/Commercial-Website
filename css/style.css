@@ -7930,6 +7930,7 @@ strong {
 
 .swiper-slide-caption .text-spacing-sm {
   font-size: 18px !important;
+  color: #ffffff !important;
   /**/
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
   padding: 10px;
@@ -11293,7 +11294,7 @@ html[class*="ie"] .dtp-hour-hand {
 
 .owl-prev:hover,
 .owl-next:hover {
-  background: #2c20c0;
+  background: #1092ad;
 }
 
 .owl-prev {
