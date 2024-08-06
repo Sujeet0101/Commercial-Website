@@ -59,6 +59,12 @@
   opacity: 1;
 }
 
+@media (max-width: 767px) {
+  .story p {
+    text-align: left !important;
+  }
+}
+
 .team-member {
   text-align: center;
   margin-bottom: 2rem;
