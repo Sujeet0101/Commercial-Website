@@ -443,19 +443,19 @@
         <div class="row">
           <div class="col-md-3">
             <div class="analytics-item text-center">
-              <h2 style="color: #0d5c7e; font-size: 100px">25+</h2>
+              <h2 class="count-up" data-count="25" style="color: #0d5c7e; font-size: 100px">25+</h2>
               <p>Years of Experience</p>
             </div>
           </div>
           <div class="col-md-3">
             <div class="analytics-item text-center">
-              <h2 style="color: #0d5c7e; font-size: 100px">50+</h2>
+              <h2 class="count-up" data-count="25" style="color: #0d5c7e; font-size: 100px">50+</h2>
               <p>Experienced Drivers</p>
             </div>
           </div>
           <div class="col-md-3">
             <div class="analytics-item text-center">
-              <h2 style="color: #0d5c7e; font-size: 100px">100+</h2>
+              <h2 class="count-up" data-count="25" style="color: #0d5c7e; font-size: 100px">100+</h2>
               <p>Popular Destinations</p>
             </div>
           </div>
@@ -833,6 +833,50 @@
         // Setup the dropdowns for both "From" and "To" inputs
         setupDropdown("fromCityInput", "fromDropdownList");
         setupDropdown("toCityInput", "toDropdownList");
+      });
+    </script>
+
+        <!--JS for custom counter-up of analytics-->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        function animateValue(obj, start, end, duration) {
+          let startTimestamp = null;
+          const step = (timestamp) => {
+            if (!startTimestamp) startTimestamp = timestamp;
+            const progress = Math.min(
+              (timestamp - startTimestamp) / duration,
+              1
+            );
+            obj.innerText = Math.floor(progress * (end - start) + start) + "+";
+            if (progress < 1) {
+              window.requestAnimationFrame(step);
+            }
+          };
+          window.requestAnimationFrame(step);
+        }
+
+        const elements = document.querySelectorAll(".count-up");
+        const options = {
+          threshold: 1.0,
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const el = entry.target;
+              const endValue = parseInt(el.getAttribute("data-count"));
+              animateValue(el, 0, endValue, 2000);
+            }
+          });
+        }, options);
+
+        elements.forEach((element) => {
+          element.setAttribute(
+            "data-count",
+            element.innerText.replace("+", "")
+          );
+          observer.observe(element);
+        });
       });
     </script>
   </body>
