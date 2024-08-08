@@ -303,8 +303,8 @@ h6,
 [class^="heading-"] {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Oswald", Helvetica, Arial, sans-serif;
-  font-weight: 400;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif !important;
+  font-weight: 700;
   text-transform: uppercase;
   color: #151515;
 }
@@ -407,7 +407,7 @@ h2,
 
 h3,
 .heading-3 {
-  font-size: 24px;
+  font-size: 36px;
   line-height: 1.45;
   letter-spacing: 0.06em;
 }
@@ -415,7 +415,7 @@ h3,
 @media (min-width: 768px) {
   h3,
   .heading-3 {
-    font-size: 28px;
+    font-size: 36px;
   }
 }
 
@@ -3287,6 +3287,7 @@ section {
 
 .box-minimal-title {
   color: #29293a;
+  font-size: 20px;
 }
 
 .container-box-minimal-wrap .box-minimal {
@@ -7875,6 +7876,14 @@ textarea.form-input.form-input-lg {
   font-style: italic;
 }
 
+.text-primary-color {
+  color: #0d5c7e;
+}
+
+.text-secondary-color {
+  color: #1092ad;
+}
+
 .text-normal {
   font-style: normal;
 }
@@ -7925,7 +7934,8 @@ strong {
 }
 
 .text-spacing-sm {
-  letter-spacing: 0.01em;
+  letter-spacing: 0.01rem;
+  font-size: 18px !important;
 }
 
 .swiper-slide-caption .text-spacing-sm {
