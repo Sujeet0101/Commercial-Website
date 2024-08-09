@@ -28,6 +28,11 @@
   margin-bottom: 20px;
 }
 
+.info-item h3 {
+  font-size: 28px;
+  font-weight: 500;
+}
+
 .info-item i {
   font-size: 22px;
   color: #003366;

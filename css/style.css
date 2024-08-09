@@ -479,7 +479,7 @@ h5,
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
-  font-size: 19px;
+  font-size: 20px;
   line-height: 1.5;
   text-transform: none;
 }
@@ -3142,7 +3142,7 @@ section {
 }
 
 .bg-gray-700 .box-cta .box-cta-title {
-  color: #0d5c7e;
+  color: #1092ad;
 }
 
 .bg-gray-700 .box-cta p {
@@ -4292,7 +4292,7 @@ section {
 }
 
 .box-cta-title {
-  color: #6d0eb1;
+  color: #1092ad;
 }
 
 .box-cta-title + * {
@@ -20296,7 +20296,7 @@ html[dir="rtl"] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 }
 
 .carousel-controls button {
-  background: #0d5c7e; /* Example background color */
+  background: #ffffff; /* Example background color */
   color: white;
   border: none;
   padding: 10px 20px;
@@ -20309,4 +20309,9 @@ html[dir="rtl"] .lg-css3.lg-slide.lg-use-css3 .lg-item.lg-current {
 
 .carousel-controls button:hover {
   background: #0d5c7e; /* Example hover color */
+}
+
+
+.text-muted {
+  font-size: 20px;
 }

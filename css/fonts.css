@@ -8007,6 +8007,7 @@ i {
 
 .fa-quote-left:before {
 	content: "\f10d";
+	color: #0d5e7c;
 }
 
 .fa-quote-right:before {
